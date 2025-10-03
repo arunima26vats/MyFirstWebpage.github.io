@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunima Vats | Full Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f6faff;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            width: 100%;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #4a6cf7;
+            border-bottom: 2px solid #4a6cf7;
+            padding-bottom: 3px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* CHANGED: Removed horizontal padding to use max-width for control */
+            padding: 60px 0; 
+            
+            /* NEW: Set a maximum width for the content area (adjust 1100px as needed) */
+            max-width: 1100px;
+            /* NEW: Center the content area horizontally on the page */
+            margin: 0 auto; 
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .hero-text h1 span {
+            color: #4a6cf7;
+        }
+
+        .hero-text button {
+            padding: 12px 24px;
+            background: #4a6cf7;
+            border: none;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-text button:hover {
+            background: #3554d1;
+        }
+
+        .hero-image {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: #4a6cf7; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            /* Image sizing to fill the whole container (hides blue ring) */
+            width: 100%; 
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+
+        /* Social Icons */
+        .socials {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            color: #4a6cf7;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">Arunima Vats</div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi,<br>I’m <span>Arunima</span><br>Full Stack Developer</h1>
+            <button>Contact</button>
+
+            <div class="socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="Dogs/pattern.jpg" alt="Arunima">
+        </div>
+    </section>
+
+</body>
+</html>
